@@ -1,20 +1,20 @@
 // ResizableDraggableTextBox.js
 import React, { useState } from 'react';
 import Draggable from 'react-draggable';
-import { Resizable } from 'react-resizable';
+// import { Resizable } from 'react-resizable';
 
 const ResizableDraggableTextBox = () => {
   const [text, setText] = useState('Resizable & Draggable Text Box');
-  const [position, setPosition] = useState({ x: 50, y: 50 });
+  // const [position, setPosition] = useState({ x: 50, y: 50 });
 //   const [size, setSize] = useState({ width: 50, height: 10 });
 
   const handleTextChange = (e) => {
     setText(e.target.value);
   };
 
-  const handleDrag = (e, data) => {
-    setPosition({ x: data.x, y: data.y });
-  };
+  // const handleDrag = (e, data) => {
+  //   setPosition({ x: data.x, y: data.y });
+  // };
 
 //   const handleResize = (e, { size }) => {
 //     setSize(size);
